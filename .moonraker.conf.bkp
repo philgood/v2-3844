@@ -1,12 +1,9 @@
 [server]
 host = 0.0.0.0
 port = 7125
-enable_debug_logging = False
 max_upload_size = 1024
 
 [file_manager]
-config_path = ~/klipper_config
-log_path = ~/klipper_logs
 enable_object_processing = False
 
 [authorization]
@@ -73,4 +70,11 @@ type = git_repo
 path = ~/klipper-pa_cal
 origin = https://github.com/ksanislo/klipper-pa_cal.git
 is_system_service = False
+
+[update_manager sonar]
+type = git_repo
+path = ~/sonar
+origin = https://github.com/mainsail-crew/sonar.git
+primary_branch = main
+managed_services = sonar
 
