@@ -4,7 +4,7 @@ port = 7125
 max_upload_size = 1024
 
 [file_manager]
-enable_object_processing = False
+enable_object_processing = True
 
 [authorization]
 cors_domains = 
@@ -47,13 +47,6 @@ install_script = scripts/KlipperScreen-install.sh
 type = git_repo
 path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
-
-[update_manager client z_calibration]
-type = git_repo
-path = ~/klipper_z_calibration
-origin = https://github.com/protoloft/klipper_z_calibration.git
-install_script = install.sh
-managed_services = klipper
 
 [update_manager mobileraker]
 type = git_repo
